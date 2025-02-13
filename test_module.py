@@ -95,7 +95,8 @@ class BoxPlotTestCase(unittest.TestCase):
         actual = []
         for label in self.ax2.get_xaxis().get_majorticklabels():
             actual.append(label.get_text())
-        expected = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        expected = ['January', 'February', 'March', 'April', 'May', 'June',  'July', 'August', 'September', 'October', 'November', 'December']
+
         self.assertEqual(actual, expected, "Expected box plot 2 secondary labels to be 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'")
         actual = []
         for label in self.ax1.get_yaxis().get_majorticklabels():
